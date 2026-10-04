@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  background-color: rgb(251, 251, 254);
+}
+
+.picture {
+  width: 260px;
+  height: 330px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.left {
+  width: 350px;
+  background-color: rgb(227, 226, 248);
+  padding: 30px;
+  margin: 0px;
+}
+
+
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  width:100%;
+    max-width: 800px;
+    text-align: center;
+    margin:0 auto 10px auto;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: rgb(218, 218, 242);
+    font-family: "Caveat", cursive;
+}
+
+.card {
+ width:100%;
+    max-width: 800px;
+    text-align: center;
+    margin:0 auto 24px auto;
+    padding:10px 15px;
+    box-sizing: border-box;
+    background-color: rgb(218, 218, 242);
+    font-family: "Caveat", cursive;
+    font-size:1.1rm;
+    overflow-wrap: anywhere;
+}
+
+
+.button{
+  display: block;
+  padding: 15px;
+  background-color: rgb(167, 167, 240);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Caveat", cursive ;
+  
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap:12px;
+  margin-bottom: 30px;
+}
+nav a {
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: rgb(167, 167, 240);
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  font-family: "Caveat", cursive ;
+}
+@media (max-width:1024px)
+{
+  .left{
+    width: 280px;
+    padding:20px
+  }
+  .picture{
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+}
+@media(max-width:768px)
+{
+  .left{
+    width: 200px;
+    padding:12px;
+  }
+
+  .right{
+    padding: 12px;
+  }
+  .picture{
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .card{
+    margin: 16px 12px;
+  }
+
+  nav{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 375px){
+  .container{
+    flex-direction: column;
+  }
+  h1{
+    margin: 0 auto 24px;
+    padding: 12px 16px;
+    font-size:1.4rem;
+  }
+  .card{
+    margin: 0 auto 24px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .left{
+    display: none;
+  }
+  nav a{
+    flex-wrap: wrap;
+  }
+}
+
